@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <h1>
+        Expense Tracker
+    </h1>
+    <div id="EnteredText"></div>
+    <div id="balance">
+        Your Balance <br>
+        <span id="bal"> $0.00 </span>
+    </div>
+
+    <div id="InEx">
+        <div class="income">
+            INCOME <br> <span id="in"> $0.00 </span>
+        </div>
+
+        <div class="virtical"></div>
+
+        <div class="income">
+            EXPENSE <br><span id="ex"> $0.00 </span>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="titles">
+        history
+        <hr>
+    </div>
+
+    <div class="titles">
+        Add new Transaction
+        <hr>
+    </div>
+
+    <div class="inputs">
+        Text<br>
+        <input type="text" id="textEntered" placeholder="Enter text">
+    </div>
+
+    <div class="inputs">
+        Amount <br> (negative - expense, positive - income)<br>
+        <input type="number" id="amount" placeholder="Enter amount...">
+    </div>
+
+    <button onclick="fn()"> Add Transaction</button>
+
+
+    <script>
+
+        function fn() {
+
+            var txt = document.getElementById("textEntered").value;
+            var am = Number(document.getElementById("amount").value);
+
+            document.getElementById("EnteredText").style.border = "2px solid darkred";
+            document.getElementById("EnteredText").innerHTML = txt;
+            if(am>0){
+                document.getElementById("in").innerHTML ="$ "+ am;
+            }
+            else if(am<0){
+                document.getElementById("ex").innerHTML ="$ "+ (-am);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

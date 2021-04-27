@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(238, 234, 234);
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+#bal{
+    font-weight: bold;
+}
+
+#balance{
+    font-size: 22px;
+    margin-bottom: 2rem;
+}
+#InEx {
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.income {
+    width: 35%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+
+}  
+
+#in{
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#ex{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.virtical{
+    border: 1px solid rgb(238, 234, 234);
+    /* margin: 0; */
+    margin-top: 1rem;
+    height: 50px;
+    position: absolute;
+    left: 45%;
+}
+
+.titles{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+.inputs{
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    padding: 0.4rem;
+}
+
+
+
+button{
+    padding: 0.4rem;
+    background-color: rgb(85, 12, 85);
+    color: white;
+    width: 100%;
+    border: none;
+}
+
+#EnteredText{
+font-size: 25px;
+color: darkred;
+font-weight: bold;
+text-align: center;
+margin-bottom: 1rem;
+}
