@@ -84,3 +84,8 @@ font-weight: bold;
 text-align: center;
 margin-bottom: 1rem;
 }
+
+.card2{
+    max-width: 60px;
+    max-height: 60px;
+}

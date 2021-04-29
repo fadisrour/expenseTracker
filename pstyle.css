@@ -1,0 +1,63 @@
+.card2{
+    width: 120px !important;
+    height: 120px i !important;
+}
+
+.card a{
+
+    text-decoration: none;
+}
+
+.bg-gray-900{
+    background-color: #1a202c;
+}
+
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer {
+    display: block;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style-type: none;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.text-gray-700{
+    color: #4a5568;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.text-gray-500 {
+    color: #a0aec0;
+}
+
+footer a {
+    font-weight: 600;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid #e2e8f0;
+}
+
+li:hover{
+    color: blue;
+}
+
