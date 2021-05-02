@@ -1,0 +1,134 @@
+* {
+    margin: 0 auto 0 auto; 
+}
+
+
+
+
+body {
+  background-color: hsl(0, 0%, 90%);
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+  line-height: 1.5;
+  margin: auto;
+  
+}
+
+.virtical{
+    border: 1px solid rgb(238, 234, 234);
+    /* margin: 0; */
+    margin-top: 1rem;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+}
+
+@media all and (max-device-width: 640px) {
+    h2 {
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+    }
+  }
+
+
+/* header {
+  text-align: center;
+  background-color: hsl(0, 0%, 80%);
+} */
+
+h1 {
+    font-size: 2em;
+    font-weight:bold;
+    padding: 1em;
+    text-align: center;
+  }
+
+.balance {
+    margin: 1em; 
+}
+
+.balance__amount {
+    font-size: 2em;
+}
+
+
+article {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    margin: 2em;
+    border: 2px solid hsl(238 71% 83%);
+    background-color: white;
+    padding:2em;
+    box-shadow: 1px 5px 8px hsl(238deg 71% 83%);
+}
+
+.income__amount {
+    font-size: 2em;
+    color: hsl(120deg 64% 67%);
+}
+
+.expense__amount {
+    font-size: 2em;
+    color: hsl(351deg 88% 63%);
+}
+
+.history {
+    margin: 1em;
+}
+
+
+
+.transaction {
+    margin: 1em;
+}
+
+.form {
+    margin: 1em;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    width:90%;
+    background-color: white;
+    padding: 15px 20px;
+    margin: 1em 0;
+    border: 2px solid grey;
+}
+
+.history p{
+    background-color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    border: 2px solid hsl(238 71% 83%); 
+    box-shadow: 1px 5px 8px hsl(238deg 71% 83%);
+}
+
+input:focus {
+    border: 2px solid blue;
+
+}
+
+
+button {
+    width:100%;
+    background-color: hsl(238 71% 70%);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+button:hover {
+    background-color: hsl(238 71% 40%);
+}

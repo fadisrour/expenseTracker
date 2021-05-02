@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Expense Tracker</title>
+    <link href=css/style.css type=text/css rel=stylesheet />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+</head>
+
+<body>
+    <div class="container">
+        <header role="banner">
+            <h1>Expense Tracker</h1>
+        </header>
+        <main>
+            <section class="balance" aria-label="Balance section">
+                <h2>YOUR BALANCE</h2>
+                <p class="balance__amount">$ <span id="balanceAmount">0.00</span></p>
+            </section>
+            <article>
+                <section class="income" aria-label="Income section">
+                    <h2>INCOME</h2>
+                    <p class="income__amount">$ <span id="incomeAmount">0.00</span></p>
+                </section>
+
+                <div class="virtical"></div>
+
+                <section class="expense" aria-label="Expense section">
+                    <h2>EXPENSE</h2>
+                    <p class="expense__amount">$ <span id="expenseAmount">0.00</span></p>
+                </section>
+            </article>
+            <section class="history" aria-label="History section">
+                <h2>History</h2>
+                <br />
+                <hr>
+                <p id="history"></p>
+            </section>
+            <section class="transaction" aria-label="Add new transaction section">
+                <h2>Add new transaction</h2>
+                <br />
+                <hr>
+                <div class="form" name="myForm">
+                    <label for="">Text</label><br />
+                    <input type="text" id="text" name="text" placeholder="Enter text..." required /><br />
+                    <label for="">Amount(negative-expense, positive-income)</label><br />
+                    <input type="number" id="amount" name="amount" placeholder="Enter amount..." step="any"
+                        required /><br />
+                    <button id="calculate">Add transaction</button>
+                </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+        </footer>
+
+        <script src="JS/transaction.js"></script>
+    </div>
+</body>
+
+</html>
